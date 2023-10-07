@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const cartButton = document.getElementById("cart-button");
-  const cartSidebar = document.getElementById("cart-sidebar");
-  const closeCartButton = document.getElementById("close-cart-button");
+  const cartButton = document.getElementById("cart-button")
+  const cartSidebar = document.getElementById("cart-sidebar")
+  const closeCartButton = document.getElementById("close-cart-button")
 
   cartButton.addEventListener("click", function () {
-    cartSidebar.classList.add("open");
-  });
+    cartSidebar.classList.add("open")
+  })
 
   closeCartButton.addEventListener("click", function () {
-    cartSidebar.classList.remove("open");
-  });
-});
+    cartSidebar.classList.remove("open")
+  })
+})
 
 
 class ShoppingCart {
@@ -58,7 +58,7 @@ class ShoppingCart {
     }
     document.getElementById("cart-items").innerHTML = newProductHTML
 
-    document.getElementById("total-cart").textContent = `Total: $${total}`;
+    document.getElementById("total-cart").textContent = `Total: $${total}`
 
   }
 }
